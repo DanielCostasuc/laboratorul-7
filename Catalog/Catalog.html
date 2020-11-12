@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<img id="logocat" src="ICONITA.jpg">
+<h1 id="titlucat"> Catalogul studentilor</h1>
+<div class="slideshow-container">
+	<div class="poze">
+	<img src="aa.jpg" width="200px" length="300px">
+	<div><a href="doc (2).html">Prezentarea Oanei</div>
+	</div>
+	<div class="poze">
+	<img src="DSC_4345.jpg" width="200px" length="300px">
+	<div><a href="Descriere personala.html">Prezentarea Teodorei</div>
+	</div>
+	<div class="poze">
+	<img src="minimalistic_00385599.jpg" width="200px" length="300px">
+	<div><a href="PaginaIA.html">Prezentarea lui Nicola</div>
+	</div>
+	<div class="poze">
+	<img src="Photo-436.jpg" width="200px" length="300px">
+	<div><a href="Personal.html">Prezentarea lui Daniel</div>
+	</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("poze");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+</body>
+</html>

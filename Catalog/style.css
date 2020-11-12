@@ -1,0 +1,22 @@
+body {background-color: yellow;}
+p {color: graphite;}
+table {background-color: black;}
+table, ul, td, tr { border: 3px solid white;}
+tr {color: grey;}
+ul {background-color: black;}
+h1 {font-family: "Times New Roman";
+	font-style: italic;
+	color: pink;}
+li {color: yellow;}
+#titlucat {color: darkgreen;
+	font-family: "Calibri";
+	font-size: 20px;}
+#logocat {border: 3px solid green;
+	border-radius: 200px;
+	witdth: 110px;
+	display: block;
+	margin: auto;
+	opacity: 1.0;}
+#pozamea {width: 200px;
+	height: 300px;}
+
